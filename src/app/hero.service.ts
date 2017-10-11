@@ -11,8 +11,6 @@ export class HeroService {
     }
 
     getHero(id: number): Promise<MyHero> {
-        return new Promise(result => {
-            setTimeout(() => result(HEROES.find(hero => hero.id == id)), 1000)
-        });
+        return new Promise(result => result(HEROES.find(hero => hero.id == id)));
     }
 }
