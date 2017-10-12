@@ -17,18 +17,22 @@ export class HeroDetailComponent implements OnInit {
     private route: ActivatedRoute,
     private location: Location,
   ) { }
-  @Input() hero: MyHero;
+
+  @Input() myHero: MyHero;
 
   ngOnInit(): void {
-    this.route.paramMap
+    if(this.myHero == null){
+      this.route.paramMap
       .switchMap((params: ParamMap) => this.heroService.getHero(+params.get('id')))
-      .subscribe(hero => this.hero = hero);
+      .subscribe(hero => this.myHero = hero);
+    }
+    
   }
   goBack(): void {
     this.location.back();
   }
   save(): void {
-    this.heroService.update(this.hero)
+    this.heroService.update(this.myHero)
       .then(() => this.goBack());
   }
 }

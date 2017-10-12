@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { HeroDetailComponent } from './hero-detail.component';
-import { HeroComponent } from './hero.component';
+import { HeroListComponent } from './hero-list.component';
 
 import { RouterModule , Routes}   from '@angular/router';
 
@@ -9,7 +9,7 @@ import { DashboardComponent }   from './dashboard.component';
 const routes : Routes = [
     {
       path: 'heroes',
-      component: HeroComponent
+      component: HeroListComponent
     },
     {
       path: 'dashboard',

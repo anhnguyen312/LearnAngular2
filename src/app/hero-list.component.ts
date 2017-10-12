@@ -6,13 +6,12 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'my-heroes',
-  templateUrl: './hero.component.html',
-  styleUrls: ['./hero.component.css'],
-  providers: [HeroService]
+  templateUrl: './hero-list.component.html',
+  styleUrls: ['./hero-list.component.css'],
 
 })
 
-export class HeroComponent implements OnInit {
+export class HeroListComponent implements OnInit {
 
   title: string;
   listHero: MyHero[];
@@ -26,7 +25,9 @@ export class HeroComponent implements OnInit {
   }
 
   getHeroes(): void {
-    this.heroService.getHeroes().then(heroes => this.listHero = heroes);
+    this.heroService.getHeroes().then(heroes => {
+      this.listHero = heroes;
+    });
   }
 
   ngOnInit(): void {

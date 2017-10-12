@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HeroDetailComponent } from './hero-detail.component';
-import { HeroComponent } from './hero.component';
+import { HeroListComponent } from './hero-list.component';
 import { HeroService } from './hero.service';
 import { DashboardComponent }   from './dashboard.component';
 import { HeroHardcodeService }   from './hero-hardcode.service';
@@ -20,7 +20,7 @@ import { InMemoryDataService }  from './in-memory-data.service';
   declarations: [
     AppComponent,
     HeroDetailComponent,
-    HeroComponent,
+    HeroListComponent,
     DashboardComponent
   ],
   imports: [

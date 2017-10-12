@@ -5,7 +5,7 @@
     Add
   </button>
 </div>
-
+s
 <ul class="aListHero">
   <li *ngFor="let hero of listHero" [class.selected]="hero === selectedHero" (click)="onSelect(hero)">
     <span class="badge">{{hero.id}}</span>
@@ -21,5 +21,9 @@
   </h2>
   <button (click)="gotoDetail()">View Details</button>
 
-  
+  <hero-detail [myHero]="selectedHero"></hero-detail> 
 </div>
+
+<ul class="aListHero">
+  <hero-detail *ngFor="let heroz of listHero" [myHero]="heroz"></hero-detail>
+  </ul>
