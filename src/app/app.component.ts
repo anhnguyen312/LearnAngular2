@@ -14,7 +14,9 @@ export class AppComponent  {
 }
 
 
-
+export class ABC{
+  
+}
 
 
 

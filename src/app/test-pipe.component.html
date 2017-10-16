@@ -1,0 +1,28 @@
+<p>The hero's birthday is {{ birthday | date:format2 }}</p>
+<button (click)="toggleFormat()">Toggle Format</button>
+
+<h2>Power Booster</h2>
+<p>Value of 2^({{exponentialStrengthSum}} + 3) : {{2 | exponentialStrength: [exponentialStrengthSum,3]}}</p>
+
+<input [(ngModel)] = "exponentialStrengthSum" placeholder="number"/>
+<p  >test enum: attr = {{hrAttr}}</p>
+
+<p *myUnless="condition" class="unless a">
+    (A) This paragraph is displayed because the condition is false.
+  </p>
+  
+  <p *myUnless="!condition" class="unless b">
+    (B) Although the condition is true,
+    this paragraph is displayed because myUnless is set to false.
+  </p>
+
+
+  
+  <!-- <p [myHighlight]='red' class="unless b">
+    test my unless syntax
+  </p> -->
+
+  <p myHighlight="red">
+    Highlight me too!
+  </p>
+  

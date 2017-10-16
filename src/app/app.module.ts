@@ -9,19 +9,29 @@ import { HeroListComponent } from './hero-list.component';
 import { HeroService } from './hero.service';
 import { DashboardComponent }   from './dashboard.component';
 import { HeroHardcodeService }   from './hero-hardcode.service';
+import { TestPipeComponent }   from './test-pipe.component';
+import { ExponentialStrengthPipe }   from './test-pipe-pow.pipe';
 
 import { AppRoutingModule }   from './app-routing.module';
 
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
+import { UnlessDirective, HighlightDirective }  from './unless.directive';
+import { HeroFormComponent} from "./form/hero-form.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroDetailComponent,
     HeroListComponent,
-    DashboardComponent
+    DashboardComponent,
+    TestPipeComponent,
+    ExponentialStrengthPipe,
+    UnlessDirective,
+    HighlightDirective,
+    HeroFormComponent
+
   ],
   imports: [
     BrowserModule,
