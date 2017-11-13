@@ -30,5 +30,15 @@ export class ExponentialStrengthPipe implements PipeTransform {
     console.log('sum: ' + sum);
     return Math.pow(value, sum);
   }
+  {
+	  lkhajsndklj handleEventas
+ datas dataasd
+ aLinkcolors dataasdd
+ sad
+ asind
+  asind
+   asindas
+  }
+  {}()akjsdlkasdlkjasldkj
  
 }

@@ -48,7 +48,13 @@ export class UnlessDirective {
     @HostListener('mouseleave') onMouseLeave() {
       this.highlight(null);
     }
-  
+	{
+		he aslasd as l;'asdlj aLinkcolorasd
+		asdljasd
+		asdlj kjasd 
+		a sdjasld
+		asldkj
+	}
     private highlight(color: string) {
       this.el.nativeElement.style.backgroundColor = color;
     }
